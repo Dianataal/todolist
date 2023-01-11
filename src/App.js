@@ -18,8 +18,8 @@ function App() {
         },
         {
             date: new Date(2023, 0, 5),
-            title:'Icecream',
-            price: 3.99
+            title:'New jeans',
+            price: 99.99
         }
     ]
 
