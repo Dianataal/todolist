@@ -12,8 +12,8 @@ function ExpenseItem(props){
                     <h2>{props.expenseData.title}</h2>
                     <div className="expense-item__price">{props.expenseData.price}€</div>
                 </div>
+            </Card>
         </div>
-</Card>
 )
 }
 
