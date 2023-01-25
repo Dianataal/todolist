@@ -1,19 +1,24 @@
-//1. komponent. See teema paneb äpi tööle
-
 import './ExpenseItem.css'
 import ExpenseDate from "./ExpenseDate";
+import Card from "./Card";
+import Card from "../UI/Card";
 
 function ExpenseItem(props){
+    const ExpenseItem = (props) => {
+        const clickHandler = () => {
+            console.log('Clicked!')
+        }
 
-    return (
-        <div className="expense-item">
-            <ExpenseDate date={props.expenseData.date}></ExpenseDate>
-            <div className="expense-item__description">
+        return (
+            <Card className="expense-item">
+                @@ -11,8 +14,10 @@ function ExpenseItem(props){
                 <h2>{props.expenseData.title}</h2>
                 <div className="expense-item__price">{props.expenseData.price}€</div>
-            </div>
-        </div>
-    )
-}
+                </div>
+                <button onClick={clickHandler}>Change Title</button>
+                </Card>
+                )
 
-export default ExpenseItem
+            }
+
+                export default ExpenseItem
