@@ -10,12 +10,12 @@ const TodoList = (props) => {
     return (
         <ul className='expenses-list'>
             {
-                props.filteredExpenses.map((expense) => {
+                props.filteredExpenses.map((todo) => {
                     return <TodoItem
-                        id={expense.id}
-                        title={expense.title}
-                        amount={expense.amount}
-                        date={expense.date}
+                        id={todo.id}
+                        title={todo.title}
+                        priority={todo.amount}
+                        date={todo.date}
                     ></TodoItem>
                 })
             }

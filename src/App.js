@@ -9,20 +9,20 @@ const DUMMY_EXPENSES = [
     {
         id: 'e1',
       date: new Date(2023, 0, 10),
-      title:'New book',
-      price: 30.99
+      title:'JS task',
+      price: 'high'
     },
     {
         id: 'e2',
       date: new Date(2023, 0, 10),
-      title:'New jeans',
-      price: 99.99
+      title:'MySQL task',
+      price: 'medium'
     },
       {
           id: 'e3',
           date: new Date(2023, 0, 5),
-          title:'New bag',
-          price: 199.99
+          title:'WordPress task',
+          price: 'low'
       }
   ]
 

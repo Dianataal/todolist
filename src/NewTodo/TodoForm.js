@@ -3,15 +3,15 @@ import "./TodoForm.css";
 
 const TodoForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('')
-    const [enteredAmount, setEnteredAmount] = useState('')
+    const [enteredPriority, setEnteredPriority] = useState('')
     const [enteredDate, setEnteredDate] = useState('')
 
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value)
     }
 
-    const amountChangeHandler = (event) => {
-        setEnteredAmount(event.target.value)
+    const priorityChangeHandler = (event) => {
+        setEnteredPriority(event.target.value)
     }
 
     const dateChangeHandler = (event) => {
@@ -22,12 +22,12 @@ const TodoForm = (props) => {
         event.preventDefault()
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            priority: enteredPriority,
             date: new Date (enteredDate)
         }
         props.onSaveExpenseData(expenseData)
         setEnteredTitle('')
-        setEnteredAmount('')
+        setEnteredPriority('')
         setEnteredDate('')
     }
 
@@ -39,16 +39,20 @@ const TodoForm = (props) => {
                     <input type = 'text' onChange={titleChangeHandler} value={enteredTitle}/>
                 </div>
                 <div className='new-expense__control'>
-                    <label>Amount</label>
-                    <input type = 'number' min='0.01' step='0.01' onChange={amountChangeHandler} value={enteredAmount}/>
+                    <label>Priority</label>
+                    <select value={enteredPriority} onChange={priorityChangeHandler}>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
                 </div>
                 <div className='new-expense__control'>
                     <label>Date</label>
-                    <input type = 'date' min='2023-01-08' max='2025-12-31' onChange={dateChangeHandler} value={enteredDate}/>
+                    <input type = 'date' min='2023-01-08' max='2023-12-31' onChange={dateChangeHandler} value={enteredDate}/>
                 </div>
             </div>
             <div className='new-expense__actions'>
-                <button type = 'submit'> Add Expense</button>
+                <button type = 'submit'>Add Task</button>
             </div>
         </form>
     )

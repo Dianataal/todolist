@@ -6,11 +6,11 @@ const TodoFilter = () => {
     return (
         <div className='expenses-filter'>
             <div className='expenses-filter__control'>
-                <label>Filter by year</label>
+                <label>Filter by priority</label>
                 <select>
-                    <option value='2023'>2023</option>
-                    <option value='2024'>2024</option>
-                    <option value='2025'>2025</option>
+                    <option value='low'>low</option>
+                    <option value='medium'>medium</option>
+                    <option value='high'>high</option>
                 </select>
             </div>
         </div>
