@@ -1,8 +1,8 @@
 import React from 'react';
-import ExpenseForm from "./ExpenseForm";
-import "./NewExpense.css";
+import TodoForm from "./TodoForm";
+import "./NewTodo.css";
 
-const NewExpense = (props) => {
+const NewTodo = (props) => {
     const saveExpenseDatahandler = (enteredExpenseData) => {
         const expenseData = {
             ...enteredExpenseData,
@@ -13,9 +13,9 @@ const NewExpense = (props) => {
 
     return (
         <div className='new-expense' >
-            <ExpenseForm onSaveExpenseData={saveExpenseDatahandler}></ExpenseForm>
+            <TodoForm onSaveExpenseData={saveExpenseDatahandler}></TodoForm>
         </div>
     )
 }
 
-export default NewExpense
+export default NewTodo

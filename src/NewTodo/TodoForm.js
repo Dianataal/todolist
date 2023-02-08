@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import "./ExpenseForm.css";
+import "./TodoForm.css";
 
-const ExpenseForm = (props) => {
+const TodoForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
     const [enteredDate, setEnteredDate] = useState('')
@@ -53,4 +53,4 @@ const ExpenseForm = (props) => {
         </form>
     )
 }
-export default ExpenseForm
+export default TodoForm

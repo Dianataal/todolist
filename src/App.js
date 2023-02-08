@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import './App.css';
 
 
-import Expenses from "./components/Expenses";
-import NewExpense from "./NewExpense/NewExpense";
+import Todo from "./components/Todo";
+import NewTodo from "./NewTodo/NewTodo";
 
 const DUMMY_EXPENSES = [
     {
@@ -40,8 +40,8 @@ console.log(expenses)
 
   return (
       <div className="App">
-        <NewExpense onAddExpense={addExpensehandler}></NewExpense>
-        <Expenses expenses={expenses}></Expenses>
+        <NewTodo onAddExpense={addExpensehandler}></NewTodo>
+        <Todo expenses={expenses}></Todo>
       </div>
   );
 }

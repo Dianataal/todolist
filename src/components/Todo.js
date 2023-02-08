@@ -1,17 +1,17 @@
 import React, {useState} from "react";
-import './Expenses.css'
+import './Todo.css'
 import Card from "../UI/Card";
-import ExpensesFilter from "./Expenses/ExpensesFilter";
-import ExpensesList from "./Expenses/ExpensesList";
+import TodoFilter from "../Todo/TodoFilter";
+import TodoList from "../Todo/TodoList";
 
-const Expenses = (props) => {
+const Todo = (props) => {
     const [filteredYear, setFilteredYear] = useState('2023')
 
-    console.log('Year data in Expenses.js' + filteredYear)
+    console.log('Year data in Todo.js' + filteredYear)
 
     const filterChangeHandler = (year) => {
-        console.log('Filter change handled by Expenses.js')
-        console.log(year + 'in Expenses.js')
+        console.log('Filter change handled by Todo.js')
+        console.log(year + 'in Todo.js')
         setFilteredYear(year)
     }
     const filteredExpenses = props.expenses.filter(
@@ -28,4 +28,4 @@ const Expenses = (props) => {
 }
 
 
-export default Expenses
+export default Todo
