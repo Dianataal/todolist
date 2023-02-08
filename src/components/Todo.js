@@ -21,8 +21,8 @@ const Todo = (props) => {
 
     return (
         <Card className="expenses">
-            <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler}></ExpensesFilter>
-            <ExpensesList filteredExpenses = {filteredExpenses}></ExpensesList>
+            <TodoFilter selected={filteredYear} onChangeFilter={filterChangeHandler}></TodoFilter>
+            <TodoList filteredExpenses = {filteredExpenses}></TodoList>
         </Card>
     )
 }
