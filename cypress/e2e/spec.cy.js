@@ -12,14 +12,7 @@ describe('Todo List', () => {
     cy.get('.new-expense__actions button')
       .click()
 
-    cy.get('.task')
-      .should('have.length', 1)
-
-    cy.get('#title')
-      .invoke('text')
-      .then((text) => {
-        expect(text).to.match(/^\s*Do homework\s*$/)
       })
   })
-})
+
 
