@@ -36,7 +36,7 @@ const TodoForm = (props) => {
             <div className="new-expense__control input">
                 <div className='new-expense__control'>
                     <label>Title</label>
-                    <input type = 'text' onChange={titleChangeHandler} value={enteredTitle}/>
+                    <input id='title' type='text' onChange={titleChangeHandler} value={enteredTitle} />
                 </div>
                 <div className='new-expense__control'>
                     <label>Priority</label>
