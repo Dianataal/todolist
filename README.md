@@ -1,8 +1,6 @@
 Introduction
 This project is a simple to-do list application built with React. It allows users to add, edit, and delete tasks, as well as filter them by priority and due date. The application is designed to be easy to use and customizable.
 
-
-
 Prequisites
 1. Download node.js to run the app
 https://nodejs.org/en
