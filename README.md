@@ -35,5 +35,5 @@ Running tests with Cypress
 * Click on 'E2E Testing' to test the whole application.
 * Choose the browser you want to run the test in.
 * Choose 'Create New Empty Spec' and click 'Create Spec'.
-* Note! Here you would write your own test but let's open the one attacked to the todolist app and run that.
-* 
+* Note! Here you would write your own test but let's open the one attached to the todolist app and run spec.cy.js.
+* If the test is successful the app is working.
