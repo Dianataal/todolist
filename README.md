@@ -8,7 +8,7 @@ https://nodejs.org/en
 https://docs.cypress.io/guides/getting-started/installing-cypress
 3. Download the zip file for Todolist and copy the main folder to your preferred location.
 https://github.com/Dianataal/todolist
-* 4. Download VS Code if you don't have a IDE
+* 4. Download VS Code if you don't have an IDE
 https://code.visualstudio.com/download
 
 Node.js download
